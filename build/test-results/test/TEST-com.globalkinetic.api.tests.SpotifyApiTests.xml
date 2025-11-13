@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.globalkinetic.api.tests.SpotifyApiTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-11-13T01:19:08" hostname="Mac" time="1.548">
+  <properties/>
+  <testcase name="testCreatePlaylist" classname="com.globalkinetic.api.tests.SpotifyApiTests" time="1.548"/>
+  <system-out><![CDATA[////////////////////////////////31adqipumduwpz4t276jvxkb7cf4
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.globalkinetic.framework.config.ConfigManager - Configuration loaded successfully from classpath: file:/Users/khodi/Documents/GlobalKineticAuto/build/resources/test/config.properties
+[Test worker] INFO com.globalkinetic.api.BaseApiClient - Base URI set to: https://api.spotify.com/v1
+[Test worker] INFO com.globalkinetic.api.BaseApiClient - Authorization token set
+[Test worker] INFO com.globalkinetic.api.SpotifyApiClient - Spotify access token configured (length: 343)
+[Test worker] INFO com.globalkinetic.api.SpotifyApiClient - Getting current user profile
+[Test worker] INFO com.globalkinetic.api.SpotifyApiClient - Creating playlist: Test Playlist 1762996749775 for user: 31adqipumduwpz4t276jvxkb7cf4
+[Test worker] INFO com.globalkinetic.framework.utils.ReportUtils - Test: testCreatePlaylist | Status: PASS | Message: Create playlist endpoint responded with status: 201
+]]></system-err>
+</testsuite>

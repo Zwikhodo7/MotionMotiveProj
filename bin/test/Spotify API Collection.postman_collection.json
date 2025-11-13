@@ -1,0 +1,480 @@
+{
+	"info": {
+		"_postman_id": "d133b899-afdc-43a6-bdf0-9df727920e5f",
+		"name": "Spotify API Collection",
+		"description": "Postman collection for Spotify Web API testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49958365",
+		"_collection_link": "https://zwikhodonemadodzi-5185299.postman.co/workspace/cf4ce5ef-05de-4576-89c0-1ccaa14126b8/collection/49958365-d133b899-afdc-43a6-bdf0-9df727920e5f?action=share&source=collection_link&creator=49958365"
+	},
+	"item": [
+		{
+			"name": "Search Artists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{spotify_access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/search?q={{search_query}}&type={{search_type}}&limit={{search_limit}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{search_query}}"
+						},
+						{
+							"key": "type",
+							"value": "{{search_type}}"
+						},
+						{
+							"key": "limit",
+							"value": "{{search_limit}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Artist",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "BQDtd0lA-W8uMK0ihx5mutLlreRW8raozoYgkFg-8ATeRpMLWug8MSFC6qgncgC42WBXUiIuU7_xtyjgVgyV1JtLpTY0aNjsOf3VpkEBP0u_4PLq6kZ6GRSKbxDjCkgFPt6kt3agmw82JORq6O0BVmqcBX2ercxe6e1qCGHI6OOzSpDvLo50fOt5Y3qJTEjOWw0G7Q6PxnsmACjpeKq5LSrMrqIPoylrjG0Gj77N4C6E7Djsrg",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "expires_in",
+							"value": 3600,
+							"type": "number"
+						},
+						{
+							"key": "refresh_token",
+							"value": "AQAB7ZbkFtb3dtKvt2LNDOUah3UyAsQ0_7xl-q_Vh5DX3J6DfLhnDObghIK8IdSE1r7BT86p4Xk5gPdqFLJBtkRBZjljEV3TrAq6JPjjBXkjJIP2_8GsuxGcNP-F55tqlZM",
+							"type": "string"
+						},
+						{
+							"key": "createdAt",
+							"value": "2025-11-13T00:00:18.065Z",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.spotify.com/authorize",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "278a6a0526f142009923f96e2d677256",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://accounts.spotify.com/api/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Spotify API",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{spotify_access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/artists/{{artist_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"artists",
+						"{{artist_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Artist Albums",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{spotify_access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/artists/{{artist_id}}/albums",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"artists",
+						"{{artist_id}}",
+						"albums"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Album",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{spotify_access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/albums/{{album_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"albums",
+						"{{album_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Track",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{spotify_access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/tracks/{{track_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"tracks",
+						"{{track_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Current User Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{spotify_access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/me",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Playlist",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "BQBjN8YieRINH26eS8k4dC4gmRnsrUQyBaoEyvLiI2CfMj9OIVCORr8eQa4wNHnX7ix1hHmCmhLH_rf7Zx0m9bO5EulFS_-7oOZLfdvLJH7jPwFH1uOmzNt5GeNSSKXxrP0MDjP9XHzwVQXxA_xE4w6FJ8BHnUjHpBCunEb_xsqo6EiC3TjEkDHSOiuZITPIdyTQfnKO-jASuZHRfqJ7VQAIhGm4NiEBDccYXy_Jober3bNFNw",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "expires_in",
+							"value": 3600,
+							"type": "number"
+						},
+						{
+							"key": "refresh_token",
+							"value": "AQAOvXmnmBvgQifeHwAOmuRSdbI6_ZaelKfFveqBQoS1TVtnx3_Z0u0UeViXGw_NsO7RHgrFYyVjPb_nkXmix6-zL2k0rXrBhHXZt9UKtAihaHa8kjwAUpolBcqo6Cjl-60",
+							"type": "string"
+						},
+						{
+							"key": "createdAt",
+							"value": "2025-11-13T00:47:34.894Z",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.spotify.com/authorize",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "278a6a0526f142009923f96e2d677256",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://accounts.spotify.com/api/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Spotify API",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{spotify_access_token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Test Playlist\",\n  \"public\": false,\n  \"description\": \"Test playlist created by automation\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/users/{{user_id}}/playlists",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"users",
+						"{{user_id}}",
+						"playlists"
+					]
+				},
+				"description": "Create a new playlist for the current user. Replace {{user_id}} with your Spotify user ID (get it from Get Current User Profile endpoint)."
+			},
+			"response": []
+		},
+		{
+			"name": "Follow Artist",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{spotify_access_token}}",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/me/following?type=artist&ids={{artist_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"me",
+						"following"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "artist"
+						},
+						{
+							"key": "ids",
+							"value": "{{artist_id}}",
+							"description": "Comma-separated list of artist IDs"
+						}
+					]
+				},
+				"description": "Follow one or more artists. Multiple artist IDs can be provided as comma-separated values."
+			},
+			"response": []
+		},
+		{
+			"name": "Unfollow Artist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{spotify_access_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/me/following?type=artist&ids={{artist_id}}",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"me",
+						"following"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "artist"
+						},
+						{
+							"key": "ids",
+							"value": "{{artist_id}}",
+							"description": "Comma-separated list of artist IDs"
+						}
+					]
+				},
+				"description": "Unfollow one or more artists. Multiple artist IDs can be provided as comma-separated values."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "clientSecret",
+				"value": "e226177f53984238b6ddfa7038d32a50",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "7574e633f39d435689b2b1f703a2d2ca",
+				"type": "string"
+			},
+			{
+				"key": "scope",
+				"value": "user-follow-modify user-follow-read playlist-modify-private playlist-modify-public playlist-read-private user-read-private user-read-email user-top-read user-read-recently-played",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://accounts.spotify.com/api/token",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://accounts.spotify.com/authorize",
+				"type": "string"
+			},
+			{
+				"key": "redirect_uri",
+				"value": "https://oauth.pstmn.io/v1/callback",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "globalkineticauto",
+  "version": "1.0.0",
+  "description": "A comprehensive test automation framework implementing Web, API, and Mobile automation testing using Java, Playwright, REST-assured, and Appium.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}

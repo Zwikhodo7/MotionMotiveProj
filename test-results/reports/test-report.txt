@@ -1,0 +1,374 @@
+[2025-11-08 15:35:56] testResponseTime - PASS: Response time: 15ms
+[2025-11-08 15:36:10] testResponseTime - PASS: Response time: 10ms
+[2025-11-08 15:36:38] testResponseTime - PASS: Response time: 10ms
+[2025-11-08 15:42:45] testResponseTime - PASS: Response time: 11ms
+[2025-11-08 19:04:47] testInvalidLogin - FAIL: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [b10cd6f0-f493-4173-bbab-601235b99905, findElement {using=xpath, value=//android.widget.EditText[@content-desc='Username input field']}]
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, deviceName: R58X71BRAEP, fullReset: false, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A155F, appium:deviceName: R58X71BRAEP, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: R58X71BRAEP, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.8125, appium:platformVersion: 15, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:viewportRect: {height: 2260, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b10cd6f0-f493-4173-bbab-601235b99905
+[2025-11-08 19:07:15] testLogout - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.EditText[@content-desc='Username input field'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-08 19:26:04] testLogout - FAIL: Expected condition failed: waiting for element to be clickable: By.xpath: //android.view.ViewGroup[@content-desc='open menu'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, deviceName: R58X71BRAEP, fullReset: false, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A155F, appium:deviceName: R58X71BRAEP, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: R58X71BRAEP, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.8125, appium:platformVersion: 15, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:viewportRect: {height: 2260, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 870d2bd0-3b90-4606-a3d7-64345b3087a7
+[2025-11-08 19:29:40] testLogout - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.view.ViewGroup[@content-desc='log out'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-08 21:52:14] testLogout - PASS: Logout successful
+[2025-11-08 21:53:00] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-08 21:55:12] testLogout - PASS: Logout successful
+[2025-11-08 21:55:25] testSuccessfulLogin - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.TextView[@text='Products'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-08 23:26:20] testLogout - PASS: Logout successful
+[2025-11-08 23:36:50] testLogout - PASS: Logout successful
+[2025-11-08 23:37:03] testSuccessfulLogin - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.TextView[@text='Products'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-08 23:43:32] testLogout - PASS: Logout successful
+[2025-11-08 23:43:45] testSuccessfulLogin - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.TextView[@text='Products'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-08 23:44:04] testLogout - PASS: Logout successful
+[2025-11-08 23:44:18] testSuccessfulLogin - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.TextView[@text='Products'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-08 23:44:49] testLogout - PASS: Logout successful
+[2025-11-08 23:45:03] testSuccessfulLogin - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.TextView[@text='Products'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-08 23:48:56] testLogout - PASS: Logout successful
+[2025-11-08 23:49:09] testSuccessfulLogin - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.TextView[@text='Products'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-08 23:58:42] testLogout - PASS: Logout successful
+[2025-11-08 23:58:47] testSuccessfulLogin - FAIL: The element 'By.xpath: //android.view.ViewGroup[@content-desc='open menu']' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [aaeb655c-1991-4331-8bfb-02b8605f5d29, clickElement {id=00000000-0000-0217-ffff-ffff000000ec}]
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, deviceName: R58X71BRAEP, fullReset: false, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A155F, appium:deviceName: R58X71BRAEP, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: R58X71BRAEP, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.8125, appium:platformVersion: 15, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:viewportRect: {height: 2260, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (aaeb655c-1991-4331-8bfb-02b8605f5d29)] -> xpath: //android.view.ViewGroup[@content-desc='open menu']]
+Session ID: aaeb655c-1991-4331-8bfb-02b8605f5d29
+[2025-11-09 00:00:31] testLogout - PASS: Logout successful
+[2025-11-09 00:00:40] testSuccessfulLogin - PASS: Login successful
+[2025-11-09 00:01:23] testInvalidLogin - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.EditText[@content-desc='Username input field'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-09 00:02:36] testLogout - PASS: Logout successful
+[2025-11-09 00:06:29] testLogout - PASS: Logout successful
+[2025-11-09 00:06:33] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 00:08:16] testLogout - PASS: Logout successful
+[2025-11-09 00:09:50] testLogout - PASS: Logout successful
+[2025-11-09 00:10:04] testNavigationToProductDetails - PASS: Navigation to product details successful
+[2025-11-09 00:11:16] testLogout - PASS: Logout successful
+[2025-11-09 00:11:26] testNavigationToProductDetails - PASS: Navigation to product details successful
+[2025-11-09 00:26:43] testLogout - PASS: Logout successful
+[2025-11-09 00:26:53] testNavigationToProductDetails - PASS: Navigation to product details successful
+[2025-11-09 00:28:39] testAddProductToCart - FAIL: Expected condition failed: waiting for presence of element located by: By.xpath: //android.widget.EditText[@content-desc='Username input field'] (tried for 10 second(s) with 500 milliseconds interval)
+[2025-11-09 00:29:14] testLogout - PASS: Logout successful
+[2025-11-09 00:29:27] testAddProductToCart - FAIL: Expected condition failed: waiting for element to be clickable: By.xpath: (//android.view.ViewGroup[@content-desc='store item'])[1] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6.1', java.version: '21.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: .MainActivity, appium:appPackage: com.saucelabs.mydemoapp.rn, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: .MainActivity, appPackage: com.saucelabs.mydemoapp.rn, automationName: UiAutomator2, deviceName: R58X71BRAEP, fullReset: false, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: samsung, appium:deviceModel: SM-A155F, appium:deviceName: R58X71BRAEP, appium:deviceScreenDensity: 450, appium:deviceScreenSize: 1080x2340, appium:deviceUDID: R58X71BRAEP, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.8125, appium:platformVersion: 15, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:viewportRect: {height: 2260, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: b568bae6-8840-40e2-ad24-934eb60049a9
+[2025-11-09 00:29:56] testLogout - PASS: Logout successful
+[2025-11-09 00:30:08] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 00:30:47] testLogout - PASS: Logout successful
+[2025-11-09 00:30:59] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 18:26:22] testResponseTime - PASS: Response time: 10ms
+[2025-11-09 18:31:58] testResponseTime - PASS: Response time: 233ms
+[2025-11-09 18:42:48] testResponseTime - PASS: Response time: 215ms
+[2025-11-09 19:05:02] testResponseTime - PASS: Response time: 7ms
+[2025-11-09 19:19:37] testResponseTime - PASS: Response time: 9ms
+[2025-11-09 19:23:39] testResponseTime - PASS: Response time: 6ms
+[2025-11-09 19:31:21] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-09 19:31:52] testSuccessfulLogin - FAIL: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-4027480347808596664/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-4027480347808596664/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-4027480347808596664/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-4027480347808596664/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-4027480347808596664/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(".product_label") to be visible
+
+[2025-11-09 19:31:54] testSuccessfulLogin - FAIL: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7758185282723208681/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7758185282723208681/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7758185282723208681/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7758185282723208681/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7758185282723208681/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(".product_label") to be visible
+
+[2025-11-09 19:31:56] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 19:31:58] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 19:32:01] testLogout - PASS: Logout successful
+[2025-11-09 19:32:01] testResponseTime - PASS: Response time: 6ms
+[2025-11-09 19:32:15] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-09 19:32:29] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-09 19:33:01] testSuccessfulLogin - FAIL: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-1956867492680336661/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-1956867492680336661/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-1956867492680336661/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-1956867492680336661/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-1956867492680336661/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(".product_label") to be visible
+
+[2025-11-09 19:33:03] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 19:33:05] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 19:33:08] testLogout - PASS: Logout successful
+[2025-11-09 19:33:15] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-09 19:33:47] testSuccessfulLogin - FAIL: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-10646022972966836293/package/lib/server/progress.js:78:26)
+    at Frame.waitForSelector (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-10646022972966836293/package/lib/server/frames.js:624:23)
+    at FrameDispatcher.waitForSelector (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-10646022972966836293/package/lib/server/dispatchers/frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-10646022972966836293/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-10646022972966836293/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(".product_label") to be visible
+
+[2025-11-09 19:33:49] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 19:33:51] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 19:33:54] testLogout - PASS: Logout successful
+[2025-11-09 19:35:12] testSuccessfulLogin - FAIL: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-14437624108400042715/package/lib/server/progress.js:78:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-14437624108400042715/package/lib/server/frames.js:1464:23)
+    at Frame.textContent (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-14437624108400042715/package/lib/server/frames.js:1080:17)
+    at FrameDispatcher.textContent (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-14437624108400042715/package/lib/server/dispatchers/frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-14437624108400042715/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-14437624108400042715/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(".product_label")
+
+[2025-11-09 19:36:12] testSuccessfulLogin - FAIL: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7996083641543959646/package/lib/server/progress.js:78:26)
+    at Frame._callOnElementOnceMatches (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7996083641543959646/package/lib/server/frames.js:1464:23)
+    at Frame.textContent (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7996083641543959646/package/lib/server/frames.js:1080:17)
+    at FrameDispatcher.textContent (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7996083641543959646/package/lib/server/dispatchers/frameDispatcher.js:178:37)
+    at FrameDispatcher._handleCommand (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7996083641543959646/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/c1/jmty4zb92mb563wflkdbq13w0000gn/T/playwright-java-7996083641543959646/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator(".product_label")
+
+[2025-11-09 19:36:24] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-09 19:37:07] testSuccessfulLogin - PASS: Login successful
+[2025-11-09 19:37:09] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 19:37:12] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 19:37:15] testLogout - PASS: Logout successful
+[2025-11-09 19:37:31] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-09 19:38:14] testSuccessfulLogin - PASS: Login successful
+[2025-11-09 19:38:17] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 19:38:19] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 19:38:22] testLogout - PASS: Logout successful
+[2025-11-09 19:41:37] testSuccessfulLogin - PASS: Login successful
+[2025-11-09 20:46:06] testLogout - PASS: Logout successful
+[2025-11-09 20:46:14] testSuccessfulLogin - PASS: Login successful
+[2025-11-09 20:47:42] testSuccessfulLogin - PASS: Login successful
+[2025-11-09 20:48:40] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-09 20:49:31] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 20:49:42] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 21:00:33] testLogout - PASS: Logout successful
+[2025-11-09 21:00:43] testNavigationToProductDetails - PASS: Navigation to product details successful
+[2025-11-09 21:02:26] testLogout - PASS: Logout successful
+[2025-11-09 21:03:21] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 21:03:45] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 21:04:28] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 21:04:40] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 21:07:34] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 21:08:12] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 21:28:46] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 22:26:21] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-09 22:27:03] testSuccessfulLogin - PASS: Login successful
+[2025-11-09 22:27:05] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 22:27:13] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 22:27:16] testLogout - PASS: Logout successful
+[2025-11-09 22:27:46] testLogout - PASS: Logout successful
+[2025-11-09 22:27:56] testSuccessfulLogin - PASS: Login successful
+[2025-11-09 22:28:08] testLogout - PASS: Logout successful
+[2025-11-09 22:28:12] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-09 22:28:25] testLogout - PASS: Logout successful
+[2025-11-09 22:28:36] testNavigationToProductDetails - PASS: Navigation to product details successful
+[2025-11-09 22:28:48] testLogout - PASS: Logout successful
+[2025-11-09 22:29:00] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-09 22:29:12] testLogout - PASS: Logout successful
+[2025-11-12 20:55:31] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-12 21:30:05] testResponseTime - PASS: Response time: 11ms
+[2025-11-12 21:30:24] testResponseTime - PASS: Response time: 7ms
+[2025-11-12 21:30:49] testResponseTime - PASS: Response time: 9ms
+[2025-11-12 21:30:49] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: text/html; charset=utf-8
+[2025-11-12 21:31:31] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 21:31:31] testGetArtist - PASS: Get artist endpoint responded with status: 404
+[2025-11-12 21:31:31] testGetAlbum - PASS: Get album endpoint responded with status: 404
+[2025-11-12 21:31:31] testGetTrack - PASS: Get track endpoint responded with status: 404
+[2025-11-12 21:31:31] testResponseTime - PASS: Response time: 9ms
+[2025-11-12 21:31:31] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: text/html; charset=utf-8
+[2025-11-12 21:32:10] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 21:36:00] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 21:37:50] testResponseTime - PASS: Response time: 6ms
+[2025-11-12 21:37:50] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: text/html; charset=utf-8
+[2025-11-12 21:49:16] testSearchArtists - FAIL: Spotify access token is not configured
+[2025-11-12 21:49:32] testSearchArtists - FAIL: Spotify access token is not configured
+[2025-11-12 21:49:42] testSearchArtists - FAIL: Spotify access token is not configured
+[2025-11-12 21:49:50] testSearchArtists - FAIL: Spotify access token is not configured
+[2025-11-12 21:50:03] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 21:50:22] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 21:50:22] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-12 21:50:24] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-12 21:50:24] testResponseTime - PASS: Response time: 911ms
+[2025-11-12 21:50:25] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-12 21:53:12] testGetAlbum - PASS: Get album endpoint responded with status: 401
+[2025-11-12 21:56:06] testGetAlbum - PASS: Get album endpoint responded with status: 401
+[2025-11-12 21:56:13] testGetAlbum - PASS: Get album endpoint responded with status: 401
+[2025-11-12 21:57:42] testGetAlbum - PASS: Get album endpoint responded with status: 401
+[2025-11-12 21:57:49] testGetAlbum - PASS: Get album endpoint responded with status: 401
+[2025-11-12 22:00:46] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 22:01:47] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 22:01:47] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-12 22:01:48] testGetAlbum - PASS: Get album endpoint responded with status: 404
+[2025-11-12 22:01:48] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-12 22:01:49] testResponseTime - PASS: Response time: 741ms
+[2025-11-12 22:01:50] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-12 22:25:22] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-12 22:25:39] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 22:26:04] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-12 23:30:38] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-12 23:31:05] testFollowArtist - PASS: Follow artist endpoint responded with status: 204
+[2025-11-12 23:31:47] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-12 23:32:03] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-12 23:32:24] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-12 23:32:42] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 23:32:42] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-12 23:32:43] testGetAlbum - PASS: Get album endpoint responded with status: 404
+[2025-11-12 23:32:43] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-12 23:32:44] testResponseTime - PASS: Response time: 885ms
+[2025-11-12 23:32:45] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-12 23:32:46] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-12 23:32:46] testFollowArtist - PASS: Follow artist endpoint responded with status: 204
+[2025-11-12 23:32:47] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-12 23:37:56] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-12 23:37:56] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-12 23:37:57] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-12 23:37:58] testResponseTime - PASS: Response time: 748ms
+[2025-11-12 23:37:59] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-12 23:38:00] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-12 23:38:01] testFollowArtist - PASS: Follow artist endpoint responded with status: 204
+[2025-11-12 23:38:01] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-13 00:07:22] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-13 00:07:22] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-13 00:07:23] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-13 00:07:24] testResponseTime - PASS: Response time: 744ms
+[2025-11-13 00:07:25] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-13 00:07:26] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-13 00:07:27] testFollowArtist - PASS: Follow artist endpoint responded with status: 204
+[2025-11-13 00:07:27] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-13 00:07:58] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-13 00:08:40] testSuccessfulLogin - PASS: Login successful
+[2025-11-13 00:08:42] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-13 00:08:52] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-13 00:08:55] testLogout - PASS: Logout successful
+[2025-11-13 00:20:22] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-13 00:20:23] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-13 00:20:24] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-13 00:20:25] testResponseTime - PASS: Response time: 655ms
+[2025-11-13 00:20:25] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-13 00:20:27] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-13 00:20:27] testFollowArtist - PASS: Follow artist endpoint responded with status: 204
+[2025-11-13 00:20:28] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-13 00:30:56] testCreatePlaylist - SKIP: Cannot get user profile (status: 401), skipping playlist creation
+[2025-11-13 00:31:33] testCreatePlaylist - SKIP: Cannot get user profile (status: 401), skipping playlist creation
+[2025-11-13 00:33:23] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-13 00:33:24] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-13 00:33:25] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-13 00:33:26] testResponseTime - PASS: Response time: 823ms
+[2025-11-13 00:33:26] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-13 00:33:28] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-13 00:33:28] testFollowArtist - PASS: Follow artist endpoint responded with status: 204
+[2025-11-13 00:33:29] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-13 00:38:22] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-13 00:38:23] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-13 00:38:23] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-13 00:38:24] testResponseTime - PASS: Response time: 686ms
+[2025-11-13 00:38:25] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-13 00:38:26] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-13 00:38:27] testFollowArtist - PASS: Follow artist endpoint responded with status: 204
+[2025-11-13 00:38:27] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-13 00:41:02] testSearchArtists - FAIL: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
+[2025-11-13 00:41:02] testGetArtist - FAIL: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
+[2025-11-13 00:41:02] testGetAlbum - FAIL: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
+[2025-11-13 00:41:02] testGetTrack - FAIL: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
+[2025-11-13 00:41:02] testResponseTime - FAIL: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
+[2025-11-13 00:41:02] testResponseHeaders - FAIL: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
+[2025-11-13 00:41:04] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-13 00:41:04] testFollowArtist - FAIL: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
+[2025-11-13 00:41:04] testUnfollowArtist - FAIL: Cannot invoke "com.google.gson.JsonElement.getAsString()" because the return value of "com.google.gson.JsonObject.get(String)" is null
+[2025-11-13 01:06:46] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-13 01:06:46] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-13 01:06:47] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-13 01:06:48] testResponseTime - PASS: Response time: 617ms
+[2025-11-13 01:06:48] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-13 01:06:50] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-13 01:06:50] testFollowArtist - PASS: Follow artist endpoint responded with status: 204
+[2025-11-13 01:06:51] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-13 01:07:07] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-13 01:07:50] testSuccessfulLogin - PASS: Login successful
+[2025-11-13 01:07:51] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-13 01:07:57] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-13 01:08:00] testLogout - PASS: Logout successful
+[2025-11-13 01:08:51] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-13 01:09:34] testSuccessfulLogin - PASS: Login successful
+[2025-11-13 01:09:36] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-13 01:09:44] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-13 01:09:46] testLogout - PASS: Logout successful
+[2025-11-13 01:10:53] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-13 01:11:05] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-13 01:11:06] testGetArtist - PASS: Get artist endpoint responded with status: 200
+[2025-11-13 01:11:07] testGetTrack - PASS: Get track endpoint responded with status: 200
+[2025-11-13 01:11:08] testResponseTime - PASS: Response time: 637ms
+[2025-11-13 01:11:08] testResponseHeaders - PASS: Response headers validated successfully. Content-Type: application/json; charset=utf-8
+[2025-11-13 01:11:09] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-13 01:11:10] testFollowArtist - PASS: Follow artist endpoint responded with status: 204
+[2025-11-13 01:11:10] testUnfollowArtist - PASS: Unfollow artist endpoint responded with status: 204
+[2025-11-13 01:12:39] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-13 01:13:22] testSuccessfulLogin - PASS: Login successful
+[2025-11-13 01:13:23] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-13 01:13:32] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-13 01:13:34] testLogout - PASS: Logout successful
+[2025-11-13 01:19:56] testLoginPageLoads - PASS: Login page loaded successfully
+[2025-11-13 01:20:40] testLogout - PASS: Logout successful
+[2025-11-13 01:20:49] testSuccessfulLogin - PASS: Login successful
+[2025-11-13 01:21:01] testLogout - PASS: Logout successful
+[2025-11-13 01:21:06] testInvalidLogin - PASS: Invalid login handled correctly
+[2025-11-13 01:21:18] testLogout - PASS: Logout successful
+[2025-11-13 01:21:28] testNavigationToProductDetails - PASS: Navigation to product details successful
+[2025-11-13 01:21:41] testLogout - PASS: Logout successful
+[2025-11-13 01:21:52] testAddProductToCart - PASS: Product added to cart successfully
+[2025-11-13 01:22:05] testLogout - PASS: Logout successful
+[2025-11-13 02:15:57] testCreatePlaylist - SKIP: Cannot get user profile (status: 401), skipping playlist creation
+[2025-11-13 02:17:05] testCreatePlaylist - SKIP: Cannot get user profile (status: 401), skipping playlist creation
+[2025-11-13 02:18:18] testCreatePlaylist - SKIP: Cannot get user profile (status: 401), skipping playlist creation
+[2025-11-13 02:19:40] testCreatePlaylist - SKIP: Cannot get user profile (status: 401), skipping playlist creation
+[2025-11-13 02:20:17] testCreatePlaylist - SKIP: Cannot get user profile (status: 401), skipping playlist creation
+[2025-11-13 02:20:37] testCreatePlaylist - SKIP: Cannot get user profile (status: 401), skipping playlist creation
+[2025-11-13 03:10:40] testCreatePlaylist - SKIP: Cannot get user profile (status: 401), skipping playlist creation
+[2025-11-13 03:16:05] testSearchArtists - FAIL: Spotify access token is not configured
+[2025-11-13 03:16:41] testSearchArtists - PASS: Search artists endpoint working correctly
+[2025-11-13 03:17:46] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-13 03:18:12] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201
+[2025-11-13 03:19:10] testCreatePlaylist - PASS: Create playlist endpoint responded with status: 201

@@ -1,0 +1,73 @@
+plugins {
+    id 'java'
+    id 'java-library'
+}
+
+group = 'com.globalkinetic'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Playwright for Web Automation
+    implementation 'com.microsoft.playwright:playwright:1.48.0'
+    
+    // REST-assured for API Automation
+    implementation 'io.rest-assured:rest-assured:5.3.2'
+    implementation 'io.rest-assured:json-path:5.3.2'
+    implementation 'io.rest-assured:xml-path:5.3.2'
+    implementation 'io.rest-assured:json-schema-validator:5.3.2'
+    
+    // Appium for Mobile Automation
+    implementation 'io.appium:java-client:9.0.0'
+    
+    // TestNG for test execution
+    testImplementation 'org.testng:testng:7.8.0'
+    
+    // Logging
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+    implementation 'org.slf4j:slf4j-simple:2.0.9'
+    
+    // JSON processing
+    implementation 'com.google.code.gson:gson:2.10.1'
+    
+    // Configuration management
+    implementation 'org.apache.commons:commons-configuration2:2.9.0'
+    implementation 'commons-beanutils:commons-beanutils:1.9.4'
+    
+    // Apache Commons
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    implementation 'commons-io:commons-io:2.15.1'
+}
+
+test {
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
+    }
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
+}
+
+task installPlaywright(type: JavaExec) {
+    description = 'Install Playwright browsers'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.microsoft.playwright.CLI'
+    args = ['install']
+    doFirst {
+        // Ensure the task runs even if browsers are already installed
+    }
+}
+
+// Install Playwright after compilation
+compileJava.finalizedBy installPlaywright
+
+

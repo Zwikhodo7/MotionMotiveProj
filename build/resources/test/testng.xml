@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GlobalKinetic Automation Test Suite" parallel="false">
+    
+    <test name="Web Automation Tests">
+        <classes>
+            <class name="com.globalkinetic.web.tests.SauceDemoSmokeTests"/>
+        </classes>
+    </test>
+
+    <test name="API Automation Tests">
+        <classes>
+            <class name="com.globalkinetic.api.tests.SpotifyApiTests"/>
+        </classes>
+    </test>
+
+    <test name="Mobile Automation Tests">
+        <classes>
+            <class name="com.globalkinetic.mobile.tests.MobileAppTests"/>
+        </classes>
+    </test>
+    
+</suite>
+

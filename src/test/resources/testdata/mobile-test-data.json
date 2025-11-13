@@ -1,0 +1,21 @@
+{
+  "validUser": {
+    "username": "bob@example.com",
+    "password": "10203040"
+  },
+  "invalidUser": {
+    "username": "invalid@example.com",
+    "password": "wrongpassword"
+  },
+  "testProducts": [
+    {
+      "name": "Sauce Lab Back Packs",
+      "price": "$29.99"
+    },
+    {
+      "name": "Sauce Lab Bike Light",
+      "price": "$9.99"
+    }
+  ]
+}
+

@@ -1,0 +1,261 @@
+{
+  "info": {
+    "name": "Spotify API Collection",
+    "description": "Postman collection for Spotify Web API testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Search Artists",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{spotify_access_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.spotify.com/v1/search?q=artist:Ed Sheeran&type=artist&limit=10",
+          "protocol": "https",
+          "host": ["api", "spotify", "com"],
+          "path": ["v1", "search"],
+          "query": [
+            {
+              "key": "q",
+              "value": "artist:Ed Sheeran"
+            },
+            {
+              "key": "type",
+              "value": "artist"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Artist",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{spotify_access_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.spotify.com/v1/artists/6eUKZXaKkcviH0Ku9w2n3V",
+          "protocol": "https",
+          "host": ["api", "spotify", "com"],
+          "path": ["v1", "artists", "6eUKZXaKkcviH0Ku9w2n3V"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Artist Albums",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{spotify_access_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.spotify.com/v1/artists/6eUKZXaKkcviH0Ku9w2n3V/albums",
+          "protocol": "https",
+          "host": ["api", "spotify", "com"],
+          "path": ["v1", "artists", "6eUKZXaKkcviH0Ku9w2n3V", "albums"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Album",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{spotify_access_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.spotify.com/v1/albums/4i3rAwPwmpKnqmd5k3ynG2",
+          "protocol": "https",
+          "host": ["api", "spotify", "com"],
+          "path": ["v1", "albums", "4i3rAwPwmpKnqmd5k3ynG2"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Track",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{spotify_access_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.spotify.com/v1/tracks/4uLU6hMCjMI75M1A2tKUQC",
+          "protocol": "https",
+          "host": ["api", "spotify", "com"],
+          "path": ["v1", "tracks", "4uLU6hMCjMI75M1A2tKUQC"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Current User Profile",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{spotify_access_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.spotify.com/v1/me",
+          "protocol": "https",
+          "host": ["api", "spotify", "com"],
+          "path": ["v1", "me"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Playlist",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{spotify_access_token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Test Playlist\",\n  \"public\": false,\n  \"description\": \"Test playlist created by automation\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.spotify.com/v1/users/{{user_id}}/playlists",
+          "protocol": "https",
+          "host": ["api", "spotify", "com"],
+          "path": ["v1", "users", "{{user_id}}", "playlists"]
+        },
+        "description": "Create a new playlist for the current user. Replace {{user_id}} with your Spotify user ID (get it from Get Current User Profile endpoint)."
+      },
+      "response": []
+    },
+    {
+      "name": "Follow Artist",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{spotify_access_token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.spotify.com/v1/me/following?type=artist&ids=6eUKZXaKkcviH0Ku9w2n3V",
+          "protocol": "https",
+          "host": ["api", "spotify", "com"],
+          "path": ["v1", "me", "following"],
+          "query": [
+            {
+              "key": "type",
+              "value": "artist"
+            },
+            {
+              "key": "ids",
+              "value": "6eUKZXaKkcviH0Ku9w2n3V",
+              "description": "Comma-separated list of artist IDs"
+            }
+          ]
+        },
+        "description": "Follow one or more artists. Multiple artist IDs can be provided as comma-separated values."
+      },
+      "response": []
+    },
+    {
+      "name": "Unfollow Artist",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{spotify_access_token}}",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://api.spotify.com/v1/me/following?type=artist&ids=6eUKZXaKkcviH0Ku9w2n3V",
+          "protocol": "https",
+          "host": ["api", "spotify", "com"],
+          "path": ["v1", "me", "following"],
+          "query": [
+            {
+              "key": "type",
+              "value": "artist"
+            },
+            {
+              "key": "ids",
+              "value": "6eUKZXaKkcviH0Ku9w2n3V",
+              "description": "Comma-separated list of artist IDs"
+            }
+          ]
+        },
+        "description": "Unfollow one or more artists. Multiple artist IDs can be provided as comma-separated values."
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "spotify_access_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "user_id",
+      "value": "",
+      "type": "string",
+      "description": "Spotify user ID - get it from Get Current User Profile endpoint"
+    }
+  ]
+}
+
